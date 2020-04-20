@@ -27,6 +27,8 @@ Updating content:
 2. About page to be less personal and describe mission and how to be involved
 3. Home page should have basic information about trans people and links to some sort of survey for **asking questions** *this needs to be created*
 
-Create content:
-Start creating posters!
-Keep it simple
+Keep it simple!
+
+Future action items:
+1. Sort and make trans resources more accessible (sort by allies, for  trans people, education, etc?)
+2. Could create some sort of trans narrative page - hear the unfiltered words of other trans students
