@@ -1,0 +1,221 @@
+:root {
+  --main-bg-color: #F2EEE2;
+  --main-txt-color: #595964;
+  --bold-bg-color: #F81B84;
+  --secondary-bg-color: #48D1CC;
+  --tertiary-bg-color: #ffdf2b;
+}
+
+/* GENERAL */
+
+body {
+  font-family: 'Poppins';
+  margin:0px;
+  padding:0px 0px 0px 0px;
+  background-color: var(--main-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-txt-color);
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* HEADER */
+
+.header {
+  overflow: hidden;
+  padding: 10px 10px;
+  background: var(--secondary-bg-color);
+}
+
+.header img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* max-height: 30vh; */
+  max-width: 100vw;
+  max-height: 30vh;
+}
+
+.navbar {
+  background-color: var(--main-bg-color);
+  width: 100%;
+  height: 46px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  font-family: "Courier New", Courier, monospace;
+  padding: 15px 0px 15px 0px;
+}
+
+.navbar ul {
+  margin: auto;
+  overflow: hidden;
+  display: table;
+}
+
+.navbar li {
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar li a {
+  display: inline-block;
+  color: var(--main-txt-color);
+  text-align: center;
+  padding: 14px 16px;
+  font-weight: normal;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: var(--tertiary-bg-color);
+}
+
+.navbar li a.active {
+  color: var(--main-bg-color);
+  background-color: var(--bold-bg-color);
+}
+
+.cover {
+  background-color: var(--main-bg-color);
+}
+
+.cover img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 80vh;
+}
+
+/* MODS */
+.bold {
+  font-weight: 600;
+}
+
+/* CONTAINERS */
+.container {
+  padding: 15px 20px 15px 30px;
+  /* TOP RIGHT BOTTOM LEFT */
+  color: var(--main-txt-color);
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  max-width: 1200px;
+  /* min-width: 500px; */
+  padding: 15px 20px 15px 30px;
+}
+
+.row.top {
+  padding: inherit;
+  padding-top: 0px;
+}
+
+.row h1 {
+  text-align: center;
+}
+
+.row img {
+  width: 100%;
+  max-width: 1600px;
+  max-height: 80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row figcaption {
+  display: block;
+  text-align: center;
+  /*Text settings to align with the img*/
+  padding-top: 10px;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.column {
+  float: left;
+  text-align: center;
+  width: 50%;
+  max-width: 1200px;
+}
+
+.column img {
+  width: 90%;
+
+}
+
+/* TEXT */
+
+.zine-text {
+  padding: 5px 5px 5px 5px;
+}
+
+.linkList {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkList h2 {
+
+}
+
+.linkList h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.linkList a {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.linkList p {
+  font-style: italic;
+}
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 600px) {
+  .header img {
+    width: 50%;
+  }
+  .navbar {
+    height: 180px;
+    position: static;
+  }
+  .navbar ul {
+    list-style-type: none;
+  }
+  .navbar li {
+    display: grid;
+  }
+  .row {
+    width: 65%;
+  }
+  .text-block {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header img {
+    width: 500px;
+  }
+  .column {
+    width: 100%;
+  }
+  .column img {
+    object-fit: cover;
+    /* max-height: 50vh; */
+    width: 50vw;
+  }
+}
